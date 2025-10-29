@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 // import MainAppComponent from './Components/MainAppComponent';
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import TimelineItem from './Components/TimelineItem';
