@@ -70,9 +70,41 @@ const memories = [
   {
     // date: "Aug 2024",
     location: "Pune",
+    image: "Images/Bhukad2.jpeg",
+    note: "Bhukkad 😂",
+  },
+  {
+    // date: "Aug 2024",
+    location: "Pune",
+    image: "Images/Bhukad1.jpeg",
+    note: "More Bhukkad 😂",
+  },
+  {
+    // date: "Aug 2024",
+    location: "Pune",
+    image: "Images/uthalerebaba.jpeg",
+    note: "Utha le re baba 😂",
+  }, 
+  {
+    // date: "Aug 2024",
+    location: "Pune",
+    image: "Images/Bangalan.jpeg",
+    note: "Typical Bangalan 😂",
+  }, 
+  {
+    // date: "Aug 2024",
+    location: "Pune",
     image: "Images/Image9.jpeg",
     note: "Cutie Before Sleep 😴",
   },
+  {
+    // date: "Aug 2024",
+    location: "Pune",
+    image: "Images/Image6.jpeg",
+    note: "Chal Pagal 😴",
+  }
+   
+
 ];
 
 
