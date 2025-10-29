@@ -77,7 +77,7 @@ const memories = [
 
 
 function App() {
- const [isPlaying, setIsPlaying] = useState(false);
+//  const [isPlaying, setIsPlaying] = useState(false);
   const timelineRef = useRef(null);
 
   // const playStory = () => {
@@ -103,17 +103,17 @@ function App() {
   //   setIsPlaying(false);
   // };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercent > 98) {
-        setIsPlaying(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  //     if (scrollPercent > 98) {
+  //       setIsPlaying(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-100 via-rose-50 to-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
