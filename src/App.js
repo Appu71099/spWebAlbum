@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import MainAppComponent from './Components/MainAppComponent';
+// import MainAppComponent from './Components/MainAppComponent';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Play, Pause } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import TimelineItem from './Components/TimelineItem';
 
 const memories = [
@@ -80,28 +80,28 @@ function App() {
  const [isPlaying, setIsPlaying] = useState(false);
   const timelineRef = useRef(null);
 
-  const playStory = () => {
-    setIsPlaying(true);
-    const timeline = timelineRef.current;
-    if (!timeline) return;
+  // const playStory = () => {
+  //   setIsPlaying(true);
+  //   const timeline = timelineRef.current;
+  //   if (!timeline) return;
 
-    let currentScroll = window.scrollY;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollStep = () => {
-      if (currentScroll >= maxScroll || !isPlaying) {
-        setIsPlaying(false);
-        return;
-      }
-      currentScroll += 2;
-      window.scrollTo({ top: currentScroll, behavior: 'instant' });
-      requestAnimationFrame(scrollStep);
-    };
-    scrollStep();
-  };
+  //   let currentScroll = window.scrollY;
+  //   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  //   const scrollStep = () => {
+  //     if (currentScroll >= maxScroll || !isPlaying) {
+  //       setIsPlaying(false);
+  //       return;
+  //     }
+  //     currentScroll += 2;
+  //     window.scrollTo({ top: currentScroll, behavior: 'instant' });
+  //     requestAnimationFrame(scrollStep);
+  //   };
+  //   scrollStep();
+  // };
 
-  const pauseStory = () => {
-    setIsPlaying(false);
-  };
+  // const pauseStory = () => {
+  //   setIsPlaying(false);
+  // };
 
   useEffect(() => {
     const handleScroll = () => {

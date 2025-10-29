@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import { Heart, Calendar, MapPin } from 'lucide-react';
+import { Heart, MapPin } from 'lucide-react';
 
 
 
